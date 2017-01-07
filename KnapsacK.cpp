@@ -1,4 +1,4 @@
-nt knapsack(int n,int w,int wt[],int v[])
+int knapsack(int n,int w,int wt[],int v[])
 {
     int a[n+1][w+1];x=0;
     for(int i=0;i<=n;i++)
