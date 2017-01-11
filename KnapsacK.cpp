@@ -7,7 +7,7 @@ int knapsack(int n,int w,int wt[],int v[])
         {
             if(i==0||j==0)
                 a[i][j]=0;
-            if(wt[i-1]>j)
+            else if(wt[i-1]>j)
                 a[i][j] = a[i-1][j];
             else
                 a[i][j] = max(a[i-1][j], v[i-1]+a[i-1][j-wt[i-1]]);
