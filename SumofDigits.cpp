@@ -17,8 +17,8 @@ long long int ans(long long int n)
     if(n==0)
         return 0;
     long long int sum=0,d,w,p=1,msd,rest;
-    d = log10(n);
-    w = a[d];
+    d = log10(n);   //log10 can cause TLE
+    w = a[d];   //or w=45*p/10*d;
     for(int i=0;i<d;i++)
         p*=10;
     msd = n/p;
