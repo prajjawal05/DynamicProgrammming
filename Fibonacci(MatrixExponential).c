@@ -1,3 +1,5 @@
+//Source: GEEKSFORGEEKS
+
 #include <stdio.h>
  
 void multiply(int F[2][2], int M[2][2]);
